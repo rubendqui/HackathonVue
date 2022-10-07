@@ -1,4 +1,13 @@
 <template>
+  <Card style="width: 25rem; margin-bottom: 2em">
+            <template #title>
+                Simple Card
+            </template>
+            <template #content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+            </template>
+        </Card>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
@@ -31,8 +40,12 @@
 </template>
 
 <script>
+import Card from 'primevue/card';
 export default {
   name: 'HelloWorld',
+  components:{
+    Card
+  },
   props: {
     msg: String
   }
